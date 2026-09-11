@@ -2,11 +2,10 @@
 #include <vector>
 using namespace std;
 
-int main() {
-    // Collection
+int main(){
     vector<int> numbers = {10, 20, 30, 40, 50};
 
-    // Using auto and range-based for loop
+
     cout << "Elements of the collection: ";
 
     for (auto element : numbers) {
@@ -14,4 +13,5 @@ int main() {
     }
 
     return 0;
+
 }

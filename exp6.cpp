@@ -8,7 +8,7 @@ private:
     string name;
 
 public:
-    // Default constructor
+
     Student()
     {
         id = 0;
@@ -16,7 +16,7 @@ public:
         cout << "Default Constructor Called" << endl;
     }
 
-    // Parameterized constructor
+
     Student(int i, string n)
     {
         id = i;
@@ -24,8 +24,7 @@ public:
         cout << "Parameterized Constructor Called" << endl;
     }
 
-    // Copy constructor
-    Student(const Student &s)
+  Student(const Student &s)
     {
         id = s.id;
         name = s.name;
@@ -37,7 +36,7 @@ public:
         cout << "ID: " << id << " Name: " << name << endl;
     }
 
-    // Destructor
+
     ~Student()
     {
         cout << "Destructor Called for " << name << endl;

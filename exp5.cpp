@@ -4,16 +4,15 @@ using namespace std;
 class BankAccount {
 private:
     string accountHolder;
-    double balance;   // Hidden data member
+    double balance;   
 
 public:
-    // Constructor
+    
     BankAccount(string name, double initialBalance) {
         accountHolder = name;
         balance = initialBalance;
     }
 
-    // Deposit function
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -23,7 +22,6 @@ public:
         }
     }
 
-    // Withdrawal function
     void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -33,7 +31,7 @@ public:
         }
     }
 
-    // Display account details
+
     void display() {
         cout << "\nAccount Holder: " << accountHolder << endl;
         cout << "Current Balance: " << balance << endl;
