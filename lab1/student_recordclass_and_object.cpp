@@ -1,37 +1,40 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-class Student {
-public:
-    string name, branch;
-    int roll;
+int main()
+{
+    string name[2];
+    int roll[2];
+    string branch[2];
 
-    void input() {
-        cout << "Enter name: ";
-        cin >> name;
+    
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "Enter details of Student " << i + 1 << endl;
 
-        cout << "Enter roll: ";
-        cin >> roll;
+        cout << "Enter Name: ";
+        cin >> name[i];
 
-        cout << "Enter branch: ";
-        cin >> branch;
+        cout << "Enter Roll Number: ";
+        cin >> roll[i];
+
+        cout << "Enter Branch: ";
+        cin >> branch[i];
+
+        cout << endl;
     }
 
-    void show() {
-        cout << "\nName: " << name << endl;
-        cout << "Roll: " << roll << endl;
-        cout << "Branch: " << branch << endl;
+    
+    cout << "\n----- Student Details -----\n";
+
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "\nStudent " << i + 1 << endl;
+        cout << "Name   : " << name[i] << endl;
+        cout << "Roll   : " << roll[i] << endl;
+        cout << "Branch : " << branch[i] << endl;
     }
-};
-
-int main() {
-    Student s1, s2;
-
-    s1.input();
-    s2.input();
-
-    s1.show();
-    s2.show();
 
     return 0;
 }
