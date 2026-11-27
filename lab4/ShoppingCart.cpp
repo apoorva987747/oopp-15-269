@@ -63,4 +63,14 @@ int main()
         {"Keyboard", 1, 1500},
         {"Bag", 1, 800}
     };
+      cout << "--- Shopping Cart ---\n";
+    displayCart(cart);
+
+    cout << "\nTotal Amount: Rs. "
+         << calculateTotal(cart) << endl;
+
+    auto expensive = findMostExpensiveItem(cart);
+
+    cout << "Most Expensive Item: "
+         << expensive.name << endl;
 }
