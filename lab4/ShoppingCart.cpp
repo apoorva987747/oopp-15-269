@@ -73,4 +73,10 @@ int main()
 
     cout << "Most Expensive Item: "
          << expensive.name << endl;
+         applyDiscount(cart);
+
+    cout << "\nAfter Applying Discount:\n";
+    displayBill(cart);
+
+    return 0;
 }
