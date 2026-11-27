@@ -12,7 +12,7 @@ int main()
     vector<int> numbers(n);
 
     cout << "Enter " << n << " elements:\n";
-
+ 
     for (int i = 0; i < n; i++)
     {
         cin >> numbers[i];
