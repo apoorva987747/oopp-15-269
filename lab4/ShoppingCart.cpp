@@ -31,4 +31,17 @@ Item findMostExpensiveItem(const vector<Item>& cart)
     auto expensive = cart[0];
 
     for (auto item : cart)
+    {if (item.price > expensive.price)
+            expensive = item;
+    }
+
+    return expensive;
+}
+void applyDiscount(vector<Item>& cart)
+{
+    for (auto &item : cart)
     {
+        if (item.price > 1000)
+            item.price = item.price * 0.90;
+    }
+}
