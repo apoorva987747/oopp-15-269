@@ -45,3 +45,13 @@ void applyDiscount(vector<Item>& cart)
             item.price = item.price * 0.90;
     }
 }
+void displayBill(const vector<Item>& cart)
+{
+    cout << "\n--- Final Bill ---\n";
+
+    displayCart(cart);
+
+    cout << fixed << setprecision(2);
+    cout << "Updated Total: Rs. "
+         << calculateTotal(cart) << endl;
+}
