@@ -55,3 +55,12 @@ void displayBill(const vector<Item>& cart)
     cout << "Updated Total: Rs. "
          << calculateTotal(cart) << endl;
 }
+int main()
+{
+    vector<Item> cart = {
+        {"Laptop", 1, 50000},
+        {"Mouse", 2, 500},
+        {"Keyboard", 1, 1500},
+        {"Bag", 1, 800}
+    };
+}
